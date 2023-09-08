@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
         XHR.addEventListener("error", on_error);
 
         // Set up request
-        XHR.open("POST", "getdata.php");
+        XHR.open("POST", "../getdata.php");
 
         // Form data is sent with request
         XHR.send(form_data);
