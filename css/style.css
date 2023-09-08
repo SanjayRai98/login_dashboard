@@ -1,0 +1,106 @@
+*{
+    box-sizing: content-box;
+}
+
+body{
+    background: linear-gradient(red,cyan);
+    height: 768px;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    position: relative;
+}
+
+.time{
+    position: absolute;
+    right: 0;
+    color: cyan;
+    font-size: 18px;
+    font-family: 'Courgette', 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 678px;
+
+    align-items: center;
+}
+
+.main_heading{
+    font-family: 'Kablammo',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.heading{
+    font-family: 'Courgette', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.input{
+    font-family: 'Dancing Script','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+    height: 25px;
+    width: 250px;
+    border: solid 1px rgb(243, 215, 215);
+    background-color: rgb(243, 215, 215);
+    transition: 0.5s;
+}
+
+.input:hover{
+    background-color: transparent;
+}
+
+.submit{
+    margin-top: 30px;
+    height: 35px;
+    width: 90px;
+    border: solid 1px lightgrey;
+    border-radius: 6px;
+    font-family: 'Ultra',Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    padding: 3px 15px;
+    background-color: rgb(183, 245, 245);
+    transition: 0.5s;
+}
+
+.submit:hover{
+    background-color: transparent;
+    color: rgb(63, 50, 184);
+}
+
+.empty{
+    font-family: 'Italianno',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 400px) {
+    .time{
+        left: 0;
+        font-size: 14px;
+    }
+    .form{
+        flex-wrap: wrap;
+    }
+    .main_heading{
+        font-size: 26px;
+    }
+    .input{
+        width: 170px;
+    }
+    .heading{
+        width: 170px;
+    }
+    .submit{
+        margin-top: 30px;
+        height: 30px;
+        width: 75px;
+        font-size: 16px;
+        padding: 3px 10px;
+    }
+  }
