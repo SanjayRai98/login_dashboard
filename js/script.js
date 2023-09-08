@@ -18,6 +18,13 @@ let httpRequest = new XMLHttpRequest();
 
 var el =  document.getElementById("empty");
 
+let su = document.getElementById('submit');
+
+su.onclick = () => {
+    alert('Database Connection is not possible on GitHub');
+    alert('Download all files then run SQL file on local machine, to see the working Login dashboard');
+}
+
 window.addEventListener("load", function () {
     var login_form = document.getElementById("form");
     login_form.addEventListener("submit", function (event) {
@@ -44,7 +51,6 @@ var login_success = function (event) {
     var response = JSON.parse(event.target.responseText);
     if (response.success) {
         alert(response.message + " Welcome " + response.name);
-        //el.innerHTML = "<h2>" + response.name + "</h2>" + "<br>" + "<h4>" + response.message + "</h4>";
         console.log(response.message);
         window.location.href = "https://sanjayrai98.github.io/auto_bg_color_changer/";
     } else {
