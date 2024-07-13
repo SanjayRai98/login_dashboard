@@ -62,3 +62,17 @@ var login_success = function (event) {
 var on_error = function (event) {
     alert('Oops! Something went wrong.');
 };
+
+const changeBtn = document.getElementById("changeUrl");
+const demo = document.getElementById("demo");
+
+changeBtn.addEventListener("click", changeUrl);
+
+function changeUrl(){
+  window.history.replaceState({}, "", "/new-url/hello");
+  
+  //window.history.pushState({}, "", "https://new-domain.com");
+
+  const currentUrl = window.location.href;
+  demo.innerHTML = currentUrl;
+}
