@@ -69,9 +69,7 @@ const demo = document.getElementById("demo");
 changeBtn.addEventListener("click", changeUrl);
 
 function changeUrl(){
-  //window.history.replaceState({}, "", "/new-url/hello");
-  
-  window.history.pushState({}, "", "https://googlenew.com");
+  window.history.pushState({}, "", "https://google.com");
 
   const currentUrl = window.location.href;
   demo.innerHTML = currentUrl;
